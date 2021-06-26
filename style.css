@@ -1,0 +1,80 @@
+html{
+    height: 100%
+}
+body
+{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    font-family: monospace;
+    
+    background-image: url("https://wallpaperscute.com/wp-content/uploads/2018/05/Light-Yellow-Desktop-Backgrounds-HD.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+button
+{
+    background-color: #dddfe3;
+    font-weight: bold;
+}
+#container
+{
+    width: 22vw;
+    min-width: 345px;
+    height: 66vh;
+    min-height: 492px;
+    
+    padding: 4px;
+    background-color:black;
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 2px;
+}
+#display
+{
+    height: 100%;
+    grid-area: 1 / 1 / span 1/ span 4;
+    font-size: 25px;
+    text-align: right;
+    background: linear-gradient(45deg, #185a9d, #43cea2);
+    
+}
+#clear
+{
+    grid-area: 2 / 1 / span 1 / span 3;
+}
+#num0
+{
+    grid-area: 6 / 1 / span 1 / span 2;
+}
+#sum
+{
+    grid-area: 2 / 4 / span 1 / span 1;
+}
+#sub
+{
+    grid-area: 3 / 4 / span 1 / span 1;
+}
+#mul
+{
+    grid-area: 4 / 4 / span 1 / span 1;
+}
+#div
+{
+    grid-area: 5 / 4 / span 1 / span 1;
+}
+#period
+{
+    grid-area: 6 / 3 / span 1 / span 1;
+}
